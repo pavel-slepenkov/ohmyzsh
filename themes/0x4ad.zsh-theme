@@ -5,7 +5,7 @@ local host='%m'
 
 local dir='%~'
 
-PROMPT="┌[${user}@${host}:%{$fg[cyan]%}${dir}%{$reset_color%}]${new_line}└─%(?..%{$fg[red]%}%?! %{$reset_color%})%(#.#.$) "
+PROMPT="[${user}|%F{green}%*%f|%{$fg[cyan]%}${dir}%{$reset_color%}]${new_line}└─%(?..%{$fg[red]%}%?! %{$reset_color%})%(#.#.$) "
 RPROMPT='%{$fg[magenta]%}$(git_prompt_info)$(git_prompt_status) $(git_remote_status)%{$reset_color%}'
 
 ZSH_THEME_GIT_PROMPT_PREFIX=""
